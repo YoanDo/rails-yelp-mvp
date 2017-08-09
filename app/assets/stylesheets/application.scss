@@ -1,0 +1,48 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "layouts/index";
+@import "components/index";
+@import "pages/index";
+
+// .row {
+//   background-color:
+// }
+
+.card {
+  margin:2%;
+  padding:10px;
+  background: #e0e0e0;
+}
+
+.btn {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.bg {
+  background: url('https://static.pexels.com/photos/326281/pexels-photo-326281.jpeg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  color: white;
+  text-shadow: black 0.3em 0.3em 0.3em;
+  background:transparent;
+}

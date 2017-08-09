@@ -1,0 +1,27 @@
+<div class="container">
+<h1>Restaurants</h1>
+
+<div class="row">
+  <% @restaurants.each do |r| %>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title"><%= r.name %></h3>
+          <p class="card-text">
+          Address: <%= r.address %><br>
+          Category: <%= r.category %><br>
+          Phone number: <%= r.phone_number %><br>
+          </p>
+          <a href="#" class="btn btn-primary">See more</a>
+        </div>
+      </div>
+    </div>
+   <% end %>
+  </div>
+  <%= link_to new_restaurant_path do %>
+    <button type="button" class="btn btn-primary btn-lg btn-block">New restaurant</button>
+  <% end %>
+
+
+</div>
+
